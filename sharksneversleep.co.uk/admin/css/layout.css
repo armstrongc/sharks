@@ -1,0 +1,20 @@
+/* CSS Document */
+
+body, p, form, input, select {
+	font-size:0.9em;
+	font-family: 'Open Sans', sans-serif;
+}
+
+h1 { position:relative; top:-10px; font-family: 'NeutraTextTFDemi','GothamBold','Open Sans', sans-serif; }
+
+table .action { width:2em; text-align:center; }
+table .action form { margin:0; padding:0; position:relative; top:-4px; }
+table .action select { width:4em; margin:0; }
+
+section.list { position:relative; }
+.add_link { position:relative; top:-10px; margin-left:5px; margin-bottom:5px; }
+
+footer { color:#CCCCCC; }
+
+
+

@@ -1,0 +1,7 @@
+
+
+AuthType basic
+AuthUserFile "/home/sites/christianarmstrong.co.uk/public_html/admin/.htpasswd"
+AuthGroupFile /dev/null
+AuthName "Secure directory"
+Require valid-user

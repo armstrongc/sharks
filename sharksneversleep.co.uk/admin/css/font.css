@@ -1,0 +1,43 @@
+@font-face
+{
+    font-family: 'GothamBold';
+  src: url('fonts/gotham-bold-webfont.eot');
+    src: url('fonts/gotham-bold-webfont.eot?iefix') format('eot'),
+         url('fonts/gotham-bold-webfont.woff') format('woff'),
+         url('fonts/gotham-bold-webfont.ttf') format('truetype'),
+         url('fonts/gotham-bold-webfont.svg#webfontkp11NGg6') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GothamMedium';
+    src: url('fonts/gotham-medium-webfont.eot');
+    src: url('fonts/gotham-medium-webfont.eot?#iefix') format('eot'),
+         url('fonts/gotham-medium-webfont.woff') format('woff'),
+         url('fonts/gotham-medium-webfont.ttf') format('truetype'),
+         url('fonts/gotham-medium-webfont.svg#webfont5mhUG4SR') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NeutraTextTFDemi';
+  src: url('fonts/neutratexttf-demi-webfont.eot');
+    src: url('fonts/neutratexttf-demi-webfont.eot?iefix') format('eot'),
+         url('fonts/neutratexttf-demi-webfont.woff') format('woff'),
+         url('fonts/neutratexttf-demi-webfont.ttf') format('truetype'),
+         url('fonts/neutratexttf-demi-webfont.svg#webfontti2tDXS6') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HelveticaNeueRegular';
+    src: url('fonts/helveticaneue_regular-webfont.eot?') format('eot'),
+         url('fonts/helveticaneue_regular-webfont.woff') format('woff'),
+         url('fonts/helveticaneue_regular-webfont.ttf') format('truetype'),
+         url('fonts/helveticaneue_regular-webfont.svg#webfont1qur3NKu') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

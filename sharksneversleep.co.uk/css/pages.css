@@ -1,0 +1,128 @@
+/*
+-------------------
+pages.css
+individual page styles
+MOBILE AND DESKTOP
+-------------------
+*/
+
+/*
+-----------------------------------
+BLOG
+-----------------------------------
+*/
+
+/* blog breadcrumb */
+nav.blog_breadcrumb { margin:0; padding:0; font-size:0.8em; }
+.blog_breadcrumb ul { list-style:none; margin:0px 0 0 0; padding:0; }
+.blog_breadcrumb ul li { display:inline; margin:0 5px 0 0; color:#999999; }
+.blog_breadcrumb ul li a:link, .blog_breadcrumb ul li a:visited { color:#999999; }
+.blog_breadcrumb ul li a:hover { color:#666666; }
+
+/* blog/category page */
+.blog_category_description { font-size:0.8em; position:relative; top:-5px; color:#999999; padding:0px 20px 0px 0; }
+.blog_link_post_row { padding:10px 20px 0px 0; margin:10px 20px 0px 0; border-top:1px solid #CCCCCC; }
+h3.blog_link_post_title { font-size:1.3em; font-weight:bold; margin:0; padding:0; }
+h3.blog_link_post_title a {  }
+.blog_link_post_description { font-size:0.8em; padding:0px 0 5px 0; }
+.blog_link_post_date { font-size:0.6em; color:#999999; }
+.blog_link_post_date a {  }
+
+@media only screen and (max-width : 599px) {
+  .blog_category_description { padding:0px 0px 0px 0; }
+  .blog_link_post_row { margin:10px 0px 0px 0; }
+}
+
+/* blog post */
+.blog_post_header { margin:0; padding:10px 0 0 0; }
+.blog_post_header h2 { margin:0; padding:0; }
+.blog_post { line-height:1.8em; font-size:0.9em; padding:10px 0 0 0; }
+.blog_post_footer { background:#7EB8F6; padding:10px 10px 10px 10px; color:#FFFFFF; border:1px solid #CCCCCC; margin:40px 0 20px 0;}
+
+/* blog comment form */
+#blog_comment_form {}
+#recaptcha_image { width:300px !important; overflow:hidden; padding:20px 0 20px 0]; };
+#recaptcha_image img { width:300px !important; }
+
+/* blog comment */
+.blog_comment {
+  border-bottom:1px solid #666666;
+  margin:0 0 10px 0;
+  padding:0 0 10px 0;
+}
+
+.blog_sub_nav_container {}
+.blog_sub_nav { padding:0 0 10px 0; }
+.blog_sub_nav a:link, .blog_sub_nav a:visited {
+  display:block; height:auto;
+}
+
+@media only screen and (max-width : 599px) {
+  .blog_sub_nav_container { padding-top:20px; }
+  .blog_sub_nav a:link, .blog_sub_nav a:visited {
+    background:#BC7EF6; padding:2px 5px 2px 5px; color:#FFFFFF; margin:0 0 5px 0;
+  }
+}
+
+/*
+-----------------------------------
+CONTACT FORM
+-----------------------------------
+*/
+
+article#contactDetails { padding:20px 60px 20px 0px; }
+article#contactForm { padding:40px 0 0 0px; }
+
+@media(max-width:768px){
+  article#contactForm { padding:0 0 0 0px; }
+}
+
+
+
+/*
+-------------------
+HOLDING AND ERROR PAGES
+-------------------
+*/
+
+body#pageError {
+    background:url(/img/layout/test_card_02.png) no-repeat center center fixed !important;
+    -webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    -o-background-size: cover !important;
+    background-size: cover !important;
+    margin:0; padding:0;
+}
+.holding_message {
+    background:rgba(255,255,255,0.8);
+    margin:80px 0 50px 0;
+    padding:40px;
+    font-size:4.5em;
+    line-height:1.5em;
+}
+
+/*
+-------------------
+MEDIA QUERIES
+-------------------
+*/
+
+@media only screen and (min-width : 1200px) {
+	/* styles go here. */
+}
+
+@media only screen and (min-width : 960px) and (max-width : 1199px) {
+	/* styles go here. */
+}
+
+@media only screen and (min-width : 768px) and (max-width : 959px){
+	/* styles go here. */
+}
+
+@media only screen and (min-width : 600px) and (max-width : 767px) {
+	/* styles go here. */
+}
+
+@media only screen and (max-width : 599px) {
+	/* styles go here. */
+}
