@@ -44,8 +44,8 @@
             //echo '<a href="' . $initial .'"><img src="/images/blog/main/' .$row["image_file"] .'" class="home_gallery_thumb" /></a>';
         }?>
     </article>
-
-    <aside class="grid_4">
+    <div class="grid_1">&nbsp;</div>
+    <aside class="grid_3">
         <?php require_once 'blog_subnav.php'; ?>
     </aside>
 

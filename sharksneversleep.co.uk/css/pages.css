@@ -54,7 +54,7 @@ h3.blog_link_post_title a {  }
 .blog_sub_nav_container {}
 .blog_sub_nav { padding:0 0 10px 0; }
 .blog_sub_nav a:link, .blog_sub_nav a:visited {
-  display:block; height:auto;
+  display:block; height:auto; font-size:0.85em; line-height:1.5em;
 }
 
 @media only screen and (max-width : 599px) {

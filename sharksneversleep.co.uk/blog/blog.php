@@ -41,7 +41,8 @@
     </article>
 
     <!-- RIGHT HAND ASIDE -->
-    <aside class="grid_4">
+    <div class="grid_1">&nbsp;</div>
+    <aside class="grid_3">
 
         <?php require_once 'blog_subnav.php'; ?>
 
