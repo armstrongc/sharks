@@ -26,7 +26,7 @@ require_once 'common/header_start.php';
     <div class="grid_4">
         <div class="content_padding">
             <h2>Sharks Never Sleep</h2>
-            <p>Sharks Never Sleep is a <a href="/blog/">web design and development blog</a> full to the brim of dazzling thoughts on Website Development.</p>
+            <p>A <a href="/blog/">website design and development blog</a> full to the brim of dazzling thoughts on Website Development.</p>
         </div>
     </div>
 
@@ -42,7 +42,7 @@ require_once 'common/header_start.php';
     <div class="grid_4">
         <div class="content_padding">
             <h2>Push Things Forward</h2>
-            <p>Take advantage of the tools available to improve, innovate and excite on a daily basis. CSS3, HTML5, and Javascript are my tools, let's see what can be done with them.</p>
+            <p>Take advantage of the technology available to improve, innovate and excite on a daily basis. CSS3, HTML5, and Javascript are my tools, let's see what can be done with them.</p>
         </div>
     </div>
 
