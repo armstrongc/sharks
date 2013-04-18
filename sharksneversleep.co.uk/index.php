@@ -12,9 +12,9 @@ require_once 'common/header_start.php';
 <div class="container_12 clearfix">
     <div class="grid_12" style="position:relative;">
         <ul class="rslides">
-            <li><img src="img/layout/scrolling_image_1.png" width="100%" /></li>
-            <li><img src="img/layout/scrolling_image_2.png" width="100%" /></li>
-            <li><img src="img/layout/scrolling_image_3.png" width="100%" /></li>
+            <li><img src="img/layout/scrolling_image_1.jpg" width="100%" /></li>
+            <!-- <li><img src="img/layout/scrolling_image_2.jpg" width="100%" /></li>
+            <li><img src="img/layout/scrolling_image_3.jpg" width="100%" /></li> -->
         </ul>
     </div>
 </div>

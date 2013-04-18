@@ -21,7 +21,7 @@ nav.blog_breadcrumb { margin:0; padding:0; font-size:0.8em; }
 
 /* blog/category page */
 .blog_category_description { font-size:0.8em; position:relative; top:-5px; color:#999999; padding:0px 20px 0px 0; }
-.blog_link_post_row { padding:10px 20px 0px 0; margin:10px 20px 0px 0; border-top:1px solid #CCCCCC; }
+.blog_link_post_row { padding:10px 20px 0px 0; margin:10px 20px 0px 0; border-top:1px solid #F0F0F0; }
 h3.blog_link_post_title { font-size:1.3em; font-weight:normal; margin:0; padding:0; }
 h3.blog_link_post_title a {  }
 .blog_link_post_description { font-size:0.8em; padding:0px 0 5px 0; }
