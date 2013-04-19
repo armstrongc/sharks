@@ -42,6 +42,12 @@ h3.blog_link_post_title a {  }
 .blog_post h3 { margin:15px 0 5px 0; padding:0; font-size:1.5em; }
 .blog_post_footer { background:#7EB8F6; padding:10px 10px 10px 10px; color:#FFFFFF; border:1px solid #CCCCCC; margin:40px 0 20px 0;}
 
+@media only screen and (max-width : 599px) {
+  .blog_post_header { padding:10px 0px 0px 0;  }
+  .blog_post { padding:10px 0px 0px 0; }
+}
+
+
 /* blog comment form */
 .blog_comment_form { padding:0px 0 0px 10px; }
 #recaptcha_image { width:300px !important; overflow:hidden; padding:20px 0 20px 0; };
