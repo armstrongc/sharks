@@ -20,7 +20,7 @@
     <!-- Blog Post -->
     <article class="grid_8">
 
-        <h2><?php echo $qcat[0]['category']; ?></h2>
+        <h2 class="blog_category_header"><?php echo $qcat[0]['category']; ?></h2>
         <p class="blog_category_description"><?php echo $qcat[0]['category_description']; ?></p>
 
         <?php foreach ($qpost_all as $row) {

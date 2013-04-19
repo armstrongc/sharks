@@ -20,8 +20,9 @@ nav.blog_breadcrumb { margin:0; padding:0; font-size:0.8em; }
 .blog_breadcrumb ul li a:hover { color:#666666; }
 
 /* blog/category page */
-.blog_category_description { font-size:0.8em; position:relative; top:-5px; color:#999999; padding:0px 20px 0px 0; }
-.blog_link_post_row { padding:10px 20px 0px 0; margin:10px 20px 0px 0; border-top:1px solid #F0F0F0; }
+.blog_category_header { padding:10px 0px 0px 10px; }
+.blog_category_description { font-size:0.8em; position:relative; top:-5px; color:#999999; padding:0px 20px 0px 10px; }
+.blog_link_post_row { padding:10px 20px 0px 10px; margin:10px 20px 0px 0; border-top:1px solid #F0F0F0; }
 h3.blog_link_post_title { font-size:1.3em; font-weight:normal; margin:0; padding:0; }
 h3.blog_link_post_title a {  }
 .blog_link_post_description { font-size:0.8em; padding:0px 0 5px 0; }
@@ -29,21 +30,26 @@ h3.blog_link_post_title a {  }
 .blog_link_post_date a {  }
 
 @media only screen and (max-width : 599px) {
+  .blog_category_header { padding:0px 0px 0px 0;  }
   .blog_category_description { padding:0px 0px 0px 0; }
-  .blog_link_post_row { margin:10px 0px 0px 0; }
+  .blog_link_post_row { margin:10px 0px 0px 0; padding:10px 20px 0px 0px; }
 }
 
 /* blog post */
-.blog_post_header { margin:0; padding:10px 0 0 0; }
+.blog_post_header { margin:0; padding:10px 0 0 10px; }
 .blog_post_header h2 { margin:0; padding:0; }
-.blog_post { line-height:1.8em; font-size:0.9em; padding:10px 0 0 0; }
+.blog_post { line-height:1.8em; font-size:0.9em; padding:10px 0 0 10px; }
 .blog_post h3 { margin:15px 0 5px 0; padding:0; font-size:1.5em; }
 .blog_post_footer { background:#7EB8F6; padding:10px 10px 10px 10px; color:#FFFFFF; border:1px solid #CCCCCC; margin:40px 0 20px 0;}
 
 /* blog comment form */
-#blog_comment_form {}
-#recaptcha_image { width:300px !important; overflow:hidden; padding:20px 0 20px 0]; };
+.blog_comment_form { padding:0px 0 0px 10px; }
+#recaptcha_image { width:300px !important; overflow:hidden; padding:20px 0 20px 0; };
 #recaptcha_image img { width:300px !important; }
+
+@media only screen and (max-width : 599px) {
+  .blog_comment_form { padding:0px 0 0px 0px; }
+}
 
 /* blog comment */
 .blog_comment {

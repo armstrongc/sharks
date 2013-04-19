@@ -19,7 +19,7 @@
     <!-- Blog Post listing -->
     <article class="grid_8">
 
-        <h2>Latest Posts</h2>
+        <h2 class="blog_category_header">Latest Posts</h2>
         <p class="blog_category_description">Browse through all of the posts available, or filter from the category listings</p>
 
         <?php foreach ($qpost_all as $row) {
