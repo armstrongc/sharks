@@ -10,7 +10,7 @@
         $recordcount=$dbobject->numrows;
 
         if($recordcount){
-            $initial = '/blog/' .gen_filename($row['category']) .'/';
+            $initial = '/'. $blog_url .'/' .gen_filename($row['category']) .'/';
             echo '<a href="' . $initial .'">' .$row["category"] .' (' .$recordcount .')</a>';
         }
     }?>
@@ -25,7 +25,7 @@
             $where = "category_id=" .$row['category_id'] ." AND is_live=1";
             $qcat = $dbobject->getData($where);
 
-            $initial = '/blog/' .gen_filename($qcat[0]['category']) .'/' .gen_filename($row['post_title']) .'/';
+            $initial = '/'. $blog_url .'/' .gen_filename($qcat[0]['category']) .'/' .gen_filename($row['post_title']) .'/';
             echo '<a href="' . $initial .'">' .$row["post_title"] .'</a>';
         }?>
     </div>

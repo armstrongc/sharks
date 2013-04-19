@@ -7,7 +7,7 @@
             <ul>
                 <li><a href="/">Home</a></li>
                 <li>&gt;</li>
-                <li><a href="/blog/">Blog</a></li>
+                <li><a href="/<?php echo $blog_url ?>/">Articles</a></li>
             </ul>
         </nav>
     </div>
@@ -28,7 +28,7 @@
             $where = "category_id=" .$row['category_id'] ." AND is_live=1";
             $qcat = $dbobject->getData($where);
 
-            $initial_cat = '/blog/' .gen_filename($qcat[0]['category']) .'/';
+            $initial_cat = '/'. $blog_url .'/' .gen_filename($qcat[0]['category']) .'/';
             $initial = $initial_cat .gen_filename($row['post_title']) .'/';
             //echo '<a href="' . $initial .'">' .$row["post_title"] .'</a><br />';
             //echo '<a href="' . $initial .'"><img src="/images/blog/main/' .$row["image_file"] .'" class="home_gallery_thumb" /></a>';
@@ -43,29 +43,7 @@
     <!-- RIGHT HAND ASIDE -->
     <div class="grid_1">&nbsp;</div>
     <aside class="grid_3">
-
         <?php require_once 'blog_subnav.php'; ?>
-
-        <!-- <h3>Categories</h3>
-        <a href="/blog/">Latest</a><br /> -->
-        <?php
-        /*
-        foreach ($qcats as $row) {
-
-            $dbobject = new blogpostObj;
-            $where = "category_id=" .$row['category_id'] ." AND is_live=1";
-            $qposts = $dbobject->getData($where);
-            $recordcount=$dbobject->numrows;
-
-            if($recordcount){
-                $initial = '/blog/' .gen_filename($row['category']) .'/';
-                //echo '<a href="' . $initial .'">' .$row["category"] .' (' .$recordcount .')</a><br />';
-                //echo '<a href="' . $initial .'"><img src="/images/category/main/' .$row["image_file"] .'" class="home_gallery_thumb" /></a>';
-            }
-
-        }
-        */
-        ?>
     </aside>
 
     <div class="clear" style="height:10px;"></div>

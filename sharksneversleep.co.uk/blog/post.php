@@ -8,11 +8,11 @@
             <ul>
                 <li><a href="/">Home</a></li>
                 <li>&gt;</li>
-                <li><a href="/blog/">Blog</a></li>
+                <li><a href="/<?php echo $blog_url ?>/">Articles</a></li>
                 <li>&gt;</li>
-                <li><a href="/blog/<?php echo gen_filename($qcat[0]['category']) ?>/"><?php echo $qcat[0]['category']; ?></a></li>
+                <li><a href="/<?php echo $blog_url ?>/<?php echo gen_filename($qcat[0]['category']) ?>/"><?php echo $qcat[0]['category']; ?></a></li>
                 <li>&gt;</li>
-                <li><a href="/blog/<?php echo gen_filename($qcat[0]['category']) ?>/<?php echo gen_filename($qpost[0]['post_title']) ?>/"><?php echo $qpost[0]['post_title']; ?></a></li>
+                <li><a href="/<?php echo $blog_url ?>/<?php echo gen_filename($qcat[0]['category']) ?>/<?php echo gen_filename($qpost[0]['post_title']) ?>/"><?php echo $qpost[0]['post_title']; ?></a></li>
             </ul>
         </nav>
     </div>

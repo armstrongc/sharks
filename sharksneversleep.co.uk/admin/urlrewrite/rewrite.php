@@ -32,13 +32,13 @@ foreach ($qcats as $row) {
 
   foreach ($qpost_all as $row2) {
 
-    $initial = '^blog/' .gen_filename($row['category']) .'/' .gen_filename($row2['post_title']) .'/([A-Za-z0-9-]+)/';
+    $initial = '^articles/' .gen_filename($row['category']) .'/' .gen_filename($row2['post_title']) .'/([A-Za-z0-9-]+)/';
     $converted = '/blog/index.php?post_id=' .$row2['post_id'] .'&category_id=' .$row['category_id'] .'&pg=$1' .' [NC,L]';
     $rule = '
 RewriteRule ' .$initial .' ' .$converted;
   $rewrite .= $rule;
 
-    $initial = '^blog/' .gen_filename($row['category']) .'/' .gen_filename($row2['post_title']) .'/';
+    $initial = '^articles/' .gen_filename($row['category']) .'/' .gen_filename($row2['post_title']) .'/';
     $converted = '/blog/index.php?post_id=' .$row2['post_id'] .'&category_id=' .$row['category_id'] .' [NC,L]';
     $rule = '
 RewriteRule ' .$initial .' ' .$converted;
@@ -46,7 +46,7 @@ RewriteRule ' .$initial .' ' .$converted;
 
   }
 
-  $initial = '^blog/' .gen_filename($row['category']) .'/';
+  $initial = '^articles/' .gen_filename($row['category']) .'/';
   $converted = '/blog/index.php?category_id=' .$row['category_id'] .' [NC,L]';
   $rule = '
 RewriteRule ' .$initial .' ' .$converted;
@@ -54,6 +54,9 @@ RewriteRule ' .$initial .' ' .$converted;
 
 }
 
+$rewrite .= '
+RewriteRule ^articles/ /blog/index.php  [NC,L]
+';
 
 if($site_mode=="live"){
   file_put_contents ( ROOT .'/.htaccess' , $rewrite );

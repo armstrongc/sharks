@@ -26,6 +26,11 @@ MOBILE AND DESKTOP
 DEFAULT SETTINGS
 -------------------
 */
+
+/* force scrollbar */
+html {overflow-y: scroll;}
+html.lt-ie9 {overflow-y: auto;}
+
 body {
     padding-top:10px; padding-bottom:10px;
     font-family: "Open Sans", sans-serif, Arial;
@@ -124,7 +129,7 @@ nav#topNavigation { background:#CCCCCC;  }
 nav#topNavigation ul { list-style: none; margin:0; padding:0 0 0 10px;}
 nav#topNavigation ul li { float:left; display:block; }
 nav#topNavigation ul li a { color:#666666; text-decoration:none; display:block; padding:10px 10px 10px 10px; font-size:1.2em; }
-nav#topNavigation ul li a:hover { color:#333333; }
+nav#topNavigation ul li a:hover, nav#topNavigation ul li a.nav_link_on:link, nav#topNavigation ul li a.nav_link_on:visited { color:#333333; }
 
 /* footer */
 footer { background:#F0F0F0; padding:10px 10px 10px 0px; border:1px solid #CCCCCC; }

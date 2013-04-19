@@ -26,7 +26,7 @@ require_once 'common/header_start.php';
     <div class="grid_4">
         <div class="content_padding">
             <h2>Sharks Never Sleep</h2>
-            <p>A <a href="/blog/">website design and development blog</a> full to the brim of dazzling thoughts on Website Development.</p>
+            <p>A <a href="/<?php echo $blog_url ?>/">website design and development blog</a> full to the brim of dazzling tutorials and thoughts on Website Development.</p>
         </div>
     </div>
 
@@ -34,7 +34,7 @@ require_once 'common/header_start.php';
     <div class="grid_4">
         <div class="content_padding">
             <h2>Guides &amp; Tutorials</h2>
-            <p>A whole host of tips, tricks and guides for front end website developers, including <a href="/blog/css/">CSS tutorials</a>, <a href="/blog/javascript/">Javascript tutorials</a>, <a href="/blog/html/">HTML tutorials</a> and <a href="/blog/git/">a guide to installing and getting started with GIT</a>.</p>
+            <p>A whole host of tips, tricks and guides for front end website developers, including <a href="/<?php echo $blog_url ?>/css/">CSS tutorials</a>, <a href="/<?php echo $blog_url ?>/javascript/">Javascript tutorials</a>, <a href="/<?php echo $blog_url ?>/html/">HTML tutorials</a> and <a href="/<?php echo $blog_url ?>/git/">a guide to installing and getting started with GIT</a>.</p>
         </div>
     </div>
 

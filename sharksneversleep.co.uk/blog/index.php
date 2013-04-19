@@ -51,15 +51,15 @@ if($_GET['category_id']!=0){
     $qcat = $dbobject->getData($where);
 }
 
-$inline_page_title = "Blog";
-$inline_canonical = "http://www.sharksneversleep.co.uk/blog/";
-$inline_ogtitle = "Sharks Never Sleep | Blog";
+$inline_page_title = "Articles";
+$inline_canonical = "http://www.sharksneversleep.co.uk/" .$blog_url ."/";
+$inline_ogtitle = "Articles | Sharks Never Sleep";
 
 if($_GET['category_id'] != '0'){
     $inline_canonical .= gen_filename($qcat[0]['category']) ."/";
     $inline_page_title .= " | " .$qcat[0]['category'];
     $inline_page_description = $qcat[0]['category_description'];
-    $inline_ogtitle = "Sharks Never Sleep | Blog | " .$qcat[0]['category'];
+    $inline_ogtitle = "Sharks Never Sleep | Articles | " .$qcat[0]['category'];
     $inline_ogimage = "http://www.sharksneversleep.co.uk/images/category/thumbs/" .$qcat[0]['image_file'];
 }
 
@@ -68,7 +68,7 @@ if($_GET['post_id'] != '0'){
     $inline_page_title .= " | " .$qpost[0]['post_title'];
     $inline_page_description = $qpost[0]['post_description'];
     $inline_keywords = $qpost[0]['post_keywords'];
-    $inline_ogtitle = "Sharks Never Sleep | Blog | " .$qcat[0]['category'] ." | " .$qpost[0]['post_title'];
+    $inline_ogtitle = "Sharks Never Sleep | Articles | " .$qcat[0]['category'] ." | " .$qpost[0]['post_title'];
     $inline_ogimage = "http://www.sharksneversleep.co.uk/images/blog/thumbs/" .$qpost[0]['image_file'];
 }
 

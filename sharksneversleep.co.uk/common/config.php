@@ -4,6 +4,7 @@ $site_name = "Sharks Never Sleep";
 $site_version = "v1.0";
 $site_url = "";
 $admin_url = "";
+$blog_url = "articles";
 $site_admin_email = "contact@sharksneversleep.co.uk";
 $site_owner_email = "contact@sharksneversleep.co.uk";
 $site_holding = false;

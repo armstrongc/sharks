@@ -32,7 +32,7 @@
             <nav class="footerNavigation">
                 <ul class="clearfix">
                     <li><a href="/">Home</a></li>
-                    <li><a href="/blog/">Latest Posts</a></li>
+                    <li><a href="/<?php echo $blog_url ?>/">Latest Posts</a></li>
                 </ul>
             </nav>
         </div>
